@@ -1,0 +1,14 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET         /                                    controllers.ApplicationController.index(file = "")
+
+GET         /api/user                            controllers.ApplicationController.user
+GET         /api/signOut                         controllers.ApplicationController.signOut
+POST        /api/signIn                          controllers.CredentialsAuthController.authenticate
+POST        /api/signUp                          controllers.SignUpController.signUp
+
+# Dynamic part of the url
+GET         /assets/*file                        controllers.Assets.at(path="/public", file)
+GET         /*file                               controllers.ApplicationController.index(file)
