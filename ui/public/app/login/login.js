@@ -13,7 +13,6 @@ angular.module('myApp.login', ['ngRoute'])
 
 .controller('LoginController', ['$scope', '$http', function($scope, $http) {
   $scope.message = '';
-  $scope.user = 'actualuser';
 
 }]);
 

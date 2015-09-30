@@ -13,7 +13,6 @@ angular.module('myApp.signup', ['ngRoute'])
 
 .controller('SignupController', ['$scope', '$http', function($scope, $http) {
   $scope.message = "";
-  $scope.user = "";
 
 }]);
 

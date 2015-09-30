@@ -51,9 +51,8 @@ class SignUpController @Inject() (
           val user = User(
             userID = UUID.randomUUID(),
             loginInfo = loginInfo,
-            firstName = Some(data.firstName),
-            lastName = Some(data.lastName),
-            fullName = Some(data.firstName + " " + data.lastName),
+            companyName = Some(data.companyName),
+            businessNumber = Some(data.businessNumber),
             email = Some(data.email)
           )
           for {

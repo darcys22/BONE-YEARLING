@@ -31,14 +31,14 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <header class="navbar navbar-static-top navbar-default">
+  <header class="navbar navbar-static-top navbar-default" ng-controller="NavigationController">
     <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href="/">
           <img alt="Brand" src="assets/images/logo-sm.png">
         </a>
       </div>
-      <ul ng-hide="user" class="nav navbar-nav navbar-right">
+      <ul ng-hide="isAuthenticated" class="nav navbar-nav navbar-right">
       <!--<ul ng-show="user" class="nav navbar-nav navbar-right">-->
         <li><a href="/pricing">Pricing</a></li>
         <li><a href="/features">Features</a></li>
@@ -49,7 +49,7 @@
           </p>
         </li>
       </ul>
-      <ul ng-show="user" class="nav navbar-nav navbar-right">
+      <ul ng-show="isAuthenticated" class="nav navbar-nav navbar-right">
       <!--<ul ng-hide="user" class="nav navbar-nav navbar-right">-->
         <li><a href="/tfnd">TFND</a></li>
         <li>
@@ -85,6 +85,7 @@
   <!--build:vendorjs assets/javascript/vendor.js-->
   <script src="libs/angular-route/angular-route.min.js"></script> 
   <script src="libs/angular-bootstrap/ui-bootstrap.min.js"></script> 
+  <script src="libs/satellizer/satellizer.min.js"></script> 
   <!--endbuild-->
 
   
@@ -94,6 +95,8 @@
   <script src="app/landing/landing.js"></script>
   <script src="app/login/login.js"></script>
   <script src="app/signup/signup.js"></script>
+  <script src="app/services/UserFactory.js"></script>
+  <script src="app/navigation/navigation.js"></script>
   <!--endbuild-->
   
   <!--build:templateCache assets/javascript/templates.js-->
