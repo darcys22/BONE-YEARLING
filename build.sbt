@@ -55,3 +55,4 @@ ScalariformKeys.preferences := ScalariformKeys.preferences.value
   .setPreference(PreserveDanglingCloseParenthesis, true)
 
 unmanagedResourceDirectories in Assets += baseDirectory.value / "ui/dist/assets"
+watchSources <++= baseDirectory map { path => ((path / "ui/dist/assets") ** "*").get }

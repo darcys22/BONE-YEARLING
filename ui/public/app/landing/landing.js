@@ -12,6 +12,7 @@ angular.module('myApp.landing', ['ngRoute'])
 }])
 
 .controller('LandingController', ['$scope', '$http', function($scope, $http) {
+  $scope.test = 'test';
 
 }]);
 

@@ -5,6 +5,7 @@ var del = require('del');
 var vinylPaths = require('vinyl-paths');
 var merge = require('merge-stream');
 var notifier = require('node-notifier');
+var fs = require("fs")
 
 gulp.task('watch', function() {
   plugins.watch('public/**/*.html', function () {
@@ -20,6 +21,10 @@ gulp.task('watch', function() {
 
 gulp.task('notify', ['build'], function() {
   notifier.notify({ title: "Angular:", message : "Finished Build" });
+});
+
+gulp.task('reload', [], function() {
+  fs.closeSync(fs.openSync('../conf/test', 'w'));
 });
 
 gulp.task('copy', [], function() {
@@ -61,5 +66,6 @@ gulp.task('clean', function() {
 
 gulp.task('default', ['notify'], function() {
     gulp.start('copy');
+    gulp.start('reload');
 });
 
