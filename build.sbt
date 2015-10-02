@@ -10,7 +10,7 @@ resolvers := ("Atlassian Releases" at "https://maven.atlassian.com/public/") +: 
 
 resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 
-resolvers += Resolver.sonatypeRepo("snapshots")
+//resolvers += Resolver.sonatypeRepo("snapshots")
 
 libraryDependencies ++= Seq(
   "com.mohiva" %% "play-silhouette" % "3.0.0",
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "net.ceedubs" %% "ficus" % "1.1.2",
   "com.adrianhurt" %% "play-bootstrap3" % "0.4.4-P24",
   "com.mohiva" %% "play-silhouette-testkit" % "3.0.0" % "test",
-  "org.reactivemongo" %% "play2-reactivemongo" % "0.12.0-SNAPSHOT",
+  "org.reactivemongo" %% "play2-reactivemongo" % "0.11.7.play24",
   cache,
   filters
 )
