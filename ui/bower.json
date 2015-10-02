@@ -16,6 +16,7 @@
   "dependencies": {
     "angular-bootstrap": "~0.13.4",
     "angular-route": "~1.4.6",
+    "angular-strap": "~2.3.3",
     "satellizer": "~0.12.5"
   },
   "homepage": "https://github.com/darcys22/BONE-YEARLING",

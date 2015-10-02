@@ -38,7 +38,8 @@
           <img alt="Brand" src="assets/images/logo-sm.png">
         </a>
       </div>
-      <ul ng-hide="isAuthenticated" class="nav navbar-nav navbar-right">
+      <!--<ul ng-hide="isAuthenticated" class="nav navbar-nav navbar-right">-->
+      <ul ng-hide="False" class="nav navbar-nav navbar-right">
       <!--<ul ng-show="user" class="nav navbar-nav navbar-right">-->
         <li><a href="/pricing">Pricing</a></li>
         <li><a href="/features">Features</a></li>
@@ -50,7 +51,7 @@
         </li>
       </ul>
       <ul ng-show="isAuthenticated" class="nav navbar-nav navbar-right">
-      <!--<ul ng-hide="user" class="nav navbar-nav navbar-right">-->
+      <ul ng-show="True" class="nav navbar-nav navbar-right">
         <li><a href="/tfnd">TFND</a></li>
         <li>
           <p class="navbar-btn">
@@ -86,6 +87,9 @@
   <script src="libs/angular-route/angular-route.min.js"></script> 
   <script src="libs/angular-bootstrap/ui-bootstrap.min.js"></script> 
   <script src="libs/satellizer/satellizer.min.js"></script> 
+  <script src="libs/angular-strap/dist/angular-strap.min.js"></script>
+  <script src="libs/angular-strap/dist/angular-strap.tpl.js"></script>
+
   <!--endbuild-->
 
   
