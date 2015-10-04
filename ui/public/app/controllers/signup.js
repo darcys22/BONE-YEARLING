@@ -13,16 +13,10 @@ angular.module('myApp.signup', ['ngRoute'])
 
 .controller('SignupController', ['$scope', '$alert', '$auth', function($scope, $alert, $auth) {
 
-  //$alert({ content: "test",
-    //animation: 'fadeZoomFadeDown',
-    //type: 'material',
-    //duration: 3
-  //});
-
   $scope.submit = function() {
     $auth.signup({
-      companyName: $scope.companyName,
-      businessNumber: $scope.businessNumber,
+      companyName: $scope.name,
+      businessNumber: $scope.abn,
       email: $scope.email,
       password: $scope.password
     }).then(function() {

@@ -66,15 +66,15 @@ var myApp = angular.module('myApp', [
 
   $locationProvider.html5Mode(true);
 
-  function loginRequired($q, $location, $auth) {
-    var deferred = $q.defer();
-    if ($auth.isAuthenticated()) {
-      deferred.resolve();
-    } else {
-      $location.path('/login');
-    }
-    return deferred.promise;
-  }
+  //function loginRequired($q, $location, $auth) {
+    //var deferred = $q.defer();
+    //if ($auth.isAuthenticated()) {
+      //deferred.resolve();
+    //} else {
+      //$location.path('/login');
+    //}
+    //return deferred.promise;
+  //}
 
 }])
 
@@ -82,7 +82,6 @@ var myApp = angular.module('myApp', [
 
   /**
    * The user data.
-   *
    * @type {{}}
    */
   $rootScope.user = {};

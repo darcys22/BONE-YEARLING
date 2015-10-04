@@ -8,9 +8,9 @@ angular.module('myApp.settings', ['ngRoute'])
   $routeProvider.when('/settings', {
     templateUrl: 'partials/profile.html',
     controller: 'SettingsController'
-    resolve: {
-      loginRequired: loginRequired
-    }
+    //resolve: {
+      //loginRequired: loginRequired
+    //}
   });
 }])
 
