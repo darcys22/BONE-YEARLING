@@ -4,6 +4,7 @@ var myApp = angular.module('myApp', [
   'ngRoute',
   'satellizer',
   'ui.bootstrap',
+  'mgcrea.ngStrap',
   'myApp.login',
   'myApp.signup',
   'myApp.landing'
@@ -39,7 +40,7 @@ var myApp = angular.module('myApp', [
         if (rejection.status === 401) {
           var $auth = $injector.get('$auth');
           $auth.logout();
-          $injector.get('$state').go('signIn');
+          $injector.get('$location').path('/login');
         }
         return $q.reject(rejection);
       }
