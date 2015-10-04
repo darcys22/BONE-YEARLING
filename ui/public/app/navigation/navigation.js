@@ -11,10 +11,14 @@ angular.module('myApp')
         //$rootScope.user = data;
       //})
 
-  
+  $scope.name = "BusinessName"
   $scope.isAuthenticated = function() {
     return $auth.isAuthenticated();
   };
+
+  $scope.logout = function() {
+    $auth.logout();
+  }
 
 }]);
 
