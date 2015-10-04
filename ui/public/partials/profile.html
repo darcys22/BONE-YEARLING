@@ -2,7 +2,7 @@
 
     <div class="page-header text-center">
         <h1><span class="fa fa-anchor"></span> Profile Page</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <a href ng-click="logout()" class="btn btn-default btn-sm">Logout</a>
     </div>
 
     <div class="row">
@@ -13,9 +13,10 @@
                 <h3><span class="fa fa-user"></span> Local</h3>
 
                     <p>
-                        <strong>id</strong>: <%= user._id %><br>
-                        <strong>email</strong>: <%= user.local.email %><br>
-                        <strong>password</strong>: <%= user.local.password %>
+                      <strong>id</strong>: {{user.userID}}<br>
+                      <strong>Email</strong>: {{user.email}}<br>
+                      <strong>Company Name</strong>: {{user.companyName}}<br>
+                      <strong>ABN</strong>: {{user.businessNumber}}<br>
                     </p>
 
             </div>
@@ -23,8 +24,6 @@
     </div>
 
     <div class="text-center">
-        <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
-        <p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
     </div>
 
 </div>

@@ -61,11 +61,10 @@
               </button>
               <ul class="dropdown-menu" role="menu" aria-labelledby="single-button">
                 <li role="menuitem"><a href="#">Permissions</a></li>
-                <li role="menuitem"><a href="#">Settings</a></li>
+                <li role="menuitem"><a href="/settings">Settings</a></li>
                 <li role="menuitem"><a href ng-click="logout()">Logout</a></li>
                 <li class="divider"></li>
-                <li role="menuitem"></li>
-                <li role="menuitem"><a>{{name}}</a></li>
+                <li role="menuitem"><a>{{user.companyName}}</a></li>
               </ul>
             </div>
           </p>
@@ -93,11 +92,13 @@
   <!--My Application Code-->
   <!--build:js assets/javascript/app.js-->
   <script src="app.js"></script>
-  <script src="app/landing/landing.js"></script>
-  <script src="app/login/login.js"></script>
-  <script src="app/signup/signup.js"></script>
+  <script src="app/controllers/landing.js"></script>
+  <script src="app/controllers/login.js"></script>
+  <script src="app/controllers/signup.js"></script>
+  <script src="app/controllers/navigation.js"></script>
+  <script src="app/controllers/settings.js"></script>
+  <script src="app/controllers/tfnd.js"></script>
   <script src="app/services/UserFactory.js"></script>
-  <script src="app/navigation/navigation.js"></script>
   <!--endbuild-->
   
   <!--build:templateCache assets/javascript/templates.js-->

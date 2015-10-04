@@ -7,6 +7,8 @@ var myApp = angular.module('myApp', [
   'mgcrea.ngStrap',
   'myApp.login',
   'myApp.signup',
+  'myApp.tfnd',
+  'myApp.settings',
   'myApp.landing'
 ])
 
@@ -63,9 +65,20 @@ var myApp = angular.module('myApp', [
   $authProvider.storage = 'localStorage';
 
   $locationProvider.html5Mode(true);
+
+  function loginRequired($q, $location, $auth) {
+    var deferred = $q.defer();
+    if ($auth.isAuthenticated()) {
+      deferred.resolve();
+    } else {
+      $location.path('/login');
+    }
+    return deferred.promise;
+  }
+
 }])
 
-.run(function($rootScope) {
+.run(function($rootScope, $location, $auth, $alert) {
 
   /**
    * The user data.
@@ -73,5 +86,17 @@ var myApp = angular.module('myApp', [
    * @type {{}}
    */
   $rootScope.user = {};
+
+  $rootScope.logout = function() {
+    $auth.logout();
+    $location.path('/login');
+    $alert({
+      content: 'You have successfully signed out',
+      animation: 'fadeZoomFadeDown',
+      type: 'material',
+      duration: 3
+    });
+  }
+
 });
 
