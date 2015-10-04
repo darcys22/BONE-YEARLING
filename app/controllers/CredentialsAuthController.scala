@@ -60,8 +60,11 @@ class CredentialsAuthController @Inject() (
    * @return The result to display.
    */
   def authenticate = Action.async(parse.json) { implicit request =>
+    play.Logger.info("Request Recieved")
     request.body.validate[SignInForm.Data].map { data =>
+      play.Logger.info("Validated")
       credentialsProvider.authenticate(Credentials(data.email, data.password)).flatMap { loginInfo =>
+        play.Logger.info("Authenticated")
         userService.retrieve(loginInfo).flatMap {
           case Some(user) => env.authenticatorService.create(loginInfo).map {
             case authenticator if data.rememberMe =>
@@ -72,6 +75,7 @@ class CredentialsAuthController @Inject() (
               )
             case authenticator => authenticator
           }.flatMap { authenticator =>
+            play.Logger.info("gotLoginInfo")
             env.eventBus.publish(LoginEvent(user, request, request2Messages))
             env.authenticatorService.init(authenticator).map { token =>
               Ok(Json.obj("token" -> token))
