@@ -4,10 +4,14 @@
 
 GET         /                                    controllers.ApplicationController.index(file = "")
 
+# Authentication 
 GET         /api/user                            controllers.ApplicationController.user
 GET         /api/signOut                         controllers.ApplicationController.signOut
 POST        /api/signIn                          controllers.CredentialsAuthController.authenticate
 POST        /api/signUp                          controllers.SignUpController.signUp
+
+# The application
+POST        /api/tfnd                            controllers.TFNDController.submit
 
 # Dynamic part of the url
 GET         /assets/*file                        controllers.Assets.at(path="/public", file)
