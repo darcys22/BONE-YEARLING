@@ -97,5 +97,24 @@ var myApp = angular.module('myApp', [
     });
   }
 
+  var publicPaths = ['/login','/signup','/landing','/'];
+  var angularPath = $location.path();
+  // register listener to watch route changes
+  $rootScope.$on( "$locationChangeStart", function(event, next, current) {
+    if (!$auth.isAuthenticated()) {
+          $alert({
+                content: 'fuckingfuckfuk',
+                animation: 'fadeZoomFadeDown',
+                type: 'material',
+                duration: 3
+              });
+
+      // not logged user, we should be going to /signin
+      if ( $.inArray(angularPath, publicPaths) ) {
+          $location.path('/login');
+      }
+    }
+  });
+
 });
 
