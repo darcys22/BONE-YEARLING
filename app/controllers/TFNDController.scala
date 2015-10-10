@@ -11,6 +11,8 @@ import play.api.libs.json._
 
 import scala.concurrent.Future
 import java.io._
+
+import core.tfnd._
 /**
  * The basic application controller.
  *
@@ -28,6 +30,7 @@ class TFNDController @Inject() (
    * @return The result to display.
    */
   def submit = SecuredAction.async { implicit request =>
+    ATOTFND.run()
     Future.successful(Ok(JsObject(
       Seq( "Sent" -> JsString("TFND"))
     )))

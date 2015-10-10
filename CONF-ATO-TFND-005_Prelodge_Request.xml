@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                <xbrli:xbrl
+                xmlns:tfnd.0002.lodge.req.02.00="http://sbr.gov.au/rprt/ato/tfnd/tfnd.0002.lodge.request.02.00.report"
+                xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+                xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech"
+                xmlns:pyde.02.01="http://sbr.gov.au/icls/py/pyde/pyde.02.01.data"
+                xmlns:tfnd.0002.prv.02.00="http://sbr.gov.au/rprt/ato/tfnd/tfnd.0002.private.02.00.module"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:RprtPyType.02.10="http://sbr.gov.au/dims/RprtPyType.02.10.dims"
+                xmlns:pyde.02.05="http://sbr.gov.au/icls/py/pyde/pyde.02.05.data"
+                xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+                xmlns:pyin.02.00="http://sbr.gov.au/icls/py/pyin/pyin.02.00.data"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:declaration1.02.01="http://sbr.gov.au/comnmdle/comnmdle.declaration1.02.01.module"
+                xmlns:ref="http://www.xbrl.org/2006/ref"
+                xmlns:edte.02.00="http://sbr.gov.au/icls/ed/edte/edte.02.00.data"
+                xmlns:dtyp.02.13="http://sbr.gov.au/fdtn/sbr.02.13.dtyp"
+                xmlns:gfati.02.00="http://sbr.gov.au/icls/gfa/gfati/gfati.02.00.data"
+                xmlns:dtyp.02.03="http://sbr.gov.au/fdtn/sbr.02.03.dtyp"
+                xmlns:dtyp.02.25="http://sbr.gov.au/fdtn/sbr.02.25.dtyp"
+                xmlns:link="http://www.xbrl.org/2003/linkbase"
+                xmlns:email1.02.00="http://sbr.gov.au/comnmdle/comnmdle.electroniccontactelectronicmail1.02.00.module"
+                xmlns:fax1.02.00="http://sbr.gov.au/comnmdle/comnmdle.electroniccontactfacsimile1.02.00.module"
+                xmlns:pyde.02.00="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data"
+                xmlns:pylk.02.00="http://sbr.gov.au/icls/py/pylk/pylk.02.00.data"
+                xmlns:pyde.02.08="http://sbr.gov.au/icls/py/pyde/pyde.02.08.data"
+                xmlns:xbrli="http://www.xbrl.org/2003/instance"
+                xmlns:prsnunstrcnm1.02.01="http://sbr.gov.au/comnmdle/comnmdle.personunstructuredname1.02.01.module"
+                xmlns:lrla.02.00="http://sbr.gov.au/icls/lr/lrla/lrla.02.00.data"
+                xmlns:pyin.02.03="http://sbr.gov.au/icls/py/pyin/pyin.02.03.data"
+                xmlns:prsnstrcnm2.02.00="http://sbr.gov.au/comnmdle/comnmdle.personstructuredname2.02.00.module"
+                xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+                xmlns:orgname1.02.00="http://sbr.gov.au/comnmdle/comnmdle.organisationname1.02.00.module"
+                xmlns:dtyp.02.00="http://sbr.gov.au/fdtn/sbr.02.00.dtyp"
+                xmlns:phone1.02.00="http://sbr.gov.au/comnmdle/comnmdle.electroniccontacttelephone1.02.00.module"
+                xmlns:address1.02.02="http://sbr.gov.au/comnmdle/comnmdle.addressdetails1.02.02.module"
+                xmlns:edte.02.01="http://sbr.gov.au/icls/ed/edte/edte.02.01.data"
+                xmlns:pyid.02.00="http://sbr.gov.au/icls/py/pyid/pyid.02.00.data"
+                xmlns:dtyp.02.06="http://sbr.gov.au/fdtn/sbr.02.06.dtyp">
+
+        <link:schemaRef xlink:type="simple" xlink:href="http://sbr.gov.au/taxonomy/sbr_au_reports/ato/tfnd/tfnd_0002/tfnd.0002.lodge.request.02.00.report.xsd"/>
+                  <xbrli:context id="RP">
+                    <xbrli:entity>
+                      <xbrli:identifier scheme="http://www.ato.gov.au/abn">17088268884</xbrli:identifier>
+                      <xbrli:segment>
+                      <xbrldi:explicitMember dimension="RprtPyType.02.10:ReportPartyTypeDimension">RprtPyType.02.10:ReportingParty</xbrldi:explicitMember>
+                      </xbrli:segment>
+                    </xbrli:entity>
+                    <xbrli:period>
+                      <xbrli:startDate>2014-07-01</xbrli:startDate>
+                      <xbrli:endDate>2015-06-30</xbrli:endDate>
+                    </xbrli:period>
+                  </xbrli:context>
+                <pyde.02.00:OrganisationDetails.OrganisationBranch.Code contextRef="RP">1</pyde.02.00:OrganisationDetails.OrganisationBranch.Code>
+                  <orgname1.02.00:OrganisationNameDetails>
+                    <pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code contextRef="RP">MN</pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code>
+                    <pyde.02.00:OrganisationNameDetails.OrganisationalName.Text contextRef="RP">Labrodo Pvt Ltd</pyde.02.00:OrganisationNameDetails.OrganisationalName.Text>
+                  </orgname1.02.00:OrganisationNameDetails>
+                  <orgname1.02.00:OrganisationNameDetails>
+                    <pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code contextRef="RP">MTR</pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code>
+                    <pyde.02.00:OrganisationNameDetails.OrganisationalName.Text contextRef="RP">Pet Friends Company</pyde.02.00:OrganisationNameDetails.OrganisationalName.Text>
+                  </orgname1.02.00:OrganisationNameDetails>
+                  <address1.02.02:AddressDetails>
+                    <pyde.02.00:AddressDetails.OverseasAddress.Indicator contextRef="RP">false</pyde.02.00:AddressDetails.OverseasAddress.Indicator>
+                    <pyde.02.01:AddressDetails.Usage.Code contextRef="RP">BUS</pyde.02.01:AddressDetails.Usage.Code>
+                    <pyde.02.00:AddressDetails.AttentionTo.Text contextRef="RP"></pyde.02.00:AddressDetails.AttentionTo.Text>
+                    <pyde.02.00:AddressDetails.Line1.Text contextRef="RP">15, Phillip Street</pyde.02.00:AddressDetails.Line1.Text>
+                    <pyde.02.00:AddressDetails.Line2.Text contextRef="RP">MeerCat Building</pyde.02.00:AddressDetails.Line2.Text>
+                    <pyde.02.00:AddressDetails.Line3.Text contextRef="RP"></pyde.02.00:AddressDetails.Line3.Text>
+                    <pyde.02.00:AddressDetails.Line4.Text contextRef="RP"></pyde.02.00:AddressDetails.Line4.Text>
+                    <pyde.02.00:AddressDetails.LocalityName.Text contextRef="RP">sydney</pyde.02.00:AddressDetails.LocalityName.Text>
+                    <pyde.02.00:AddressDetails.Postcode.Text contextRef="RP">2000</pyde.02.00:AddressDetails.Postcode.Text>
+                    <pyde.02.00:AddressDetails.StateOrTerritory.Code contextRef="RP">NSW</pyde.02.00:AddressDetails.StateOrTerritory.Code>
+                    <pyde.02.08:AddressDetails.CountryName.Text contextRef="RP" xsi:nil="true"></pyde.02.08:AddressDetails.CountryName.Text>
+                    <pyde.02.08:AddressDetails.Country.Code contextRef="RP" xsi:nil="true"></pyde.02.08:AddressDetails.Country.Code>
+                  </address1.02.02:AddressDetails>
+                  <address1.02.02:AddressDetails>
+                    <pyde.02.00:AddressDetails.OverseasAddress.Indicator contextRef="RP">false</pyde.02.00:AddressDetails.OverseasAddress.Indicator>
+                    <pyde.02.01:AddressDetails.Usage.Code contextRef="RP">POS</pyde.02.01:AddressDetails.Usage.Code>
+                    <pyde.02.00:AddressDetails.AttentionTo.Text contextRef="RP"></pyde.02.00:AddressDetails.AttentionTo.Text>
+                    <pyde.02.00:AddressDetails.Line1.Text contextRef="RP">21, Arthur Street</pyde.02.00:AddressDetails.Line1.Text>
+                    <pyde.02.00:AddressDetails.Line2.Text contextRef="RP">Sussex House</pyde.02.00:AddressDetails.Line2.Text>
+                    <pyde.02.00:AddressDetails.Line3.Text contextRef="RP"></pyde.02.00:AddressDetails.Line3.Text>
+                    <pyde.02.00:AddressDetails.Line4.Text contextRef="RP"></pyde.02.00:AddressDetails.Line4.Text>
+                    <pyde.02.00:AddressDetails.LocalityName.Text contextRef="RP">Sydney</pyde.02.00:AddressDetails.LocalityName.Text>
+                    <pyde.02.00:AddressDetails.Postcode.Text contextRef="RP">2000</pyde.02.00:AddressDetails.Postcode.Text>
+                    <pyde.02.00:AddressDetails.StateOrTerritory.Code contextRef="RP">NSW</pyde.02.00:AddressDetails.StateOrTerritory.Code>
+                    <pyde.02.08:AddressDetails.CountryName.Text contextRef="RP" xsi:nil="true"></pyde.02.08:AddressDetails.CountryName.Text>
+                    <pyde.02.08:AddressDetails.Country.Code contextRef="RP" xsi:nil="true"></pyde.02.08:AddressDetails.Country.Code>
+                  </address1.02.02:AddressDetails>
+                  <prsnunstrcnm1.02.01:PersonUnstructuredName>
+                    <pyde.02.05:PersonUnstructuredName.Usage.Code contextRef="RP">Contact</pyde.02.05:PersonUnstructuredName.Usage.Code>
+                    <pyde.02.00:PersonUnstructuredName.FullName.Text contextRef="RP">Clive Peter</pyde.02.00:PersonUnstructuredName.FullName.Text>
+                  </prsnunstrcnm1.02.01:PersonUnstructuredName>
+                  <phone1.02.00:ElectronicContactTelephone>
+                    <pyde.02.00:ElectronicContact.Telephone.Usage.Code contextRef="RP">03</pyde.02.00:ElectronicContact.Telephone.Usage.Code>
+                    <pyde.02.00:ElectronicContact.Telephone.ServiceLine.Code contextRef="RP">02</pyde.02.00:ElectronicContact.Telephone.ServiceLine.Code>
+                    <pyde.02.00:ElectronicContact.Telephone.Area.Code contextRef="RP">02</pyde.02.00:ElectronicContact.Telephone.Area.Code>
+                    <pyde.02.00:ElectronicContact.Telephone.Minimal.Number contextRef="RP">92557125</pyde.02.00:ElectronicContact.Telephone.Minimal.Number>
+                  </phone1.02.00:ElectronicContactTelephone>
+                  <fax1.02.00:ElectronicContactFacsimile>
+                    <pyde.02.00:ElectronicContact.Facsimile.Usage.Code contextRef="RP">03</pyde.02.00:ElectronicContact.Facsimile.Usage.Code>
+                    <pyde.02.00:ElectronicContact.Facsimile.Area.Code contextRef="RP">02</pyde.02.00:ElectronicContact.Facsimile.Area.Code>
+                    <pyde.02.00:ElectronicContact.Facsimile.Minimal.Number contextRef="RP">92557126</pyde.02.00:ElectronicContact.Facsimile.Minimal.Number>
+                  </fax1.02.00:ElectronicContactFacsimile>
+                  <email1.02.00:ElectronicContactElectronicMail>
+                    <pyde.02.00:ElectronicContact.ElectronicMail.Usage.Code contextRef="RP">03</pyde.02.00:ElectronicContact.ElectronicMail.Usage.Code>
+                    <pyde.02.00:ElectronicContact.ElectronicMail.Address.Text contextRef="RP">info@petfriends.com.au</pyde.02.00:ElectronicContact.ElectronicMail.Address.Text>
+                  </email1.02.00:ElectronicContactElectronicMail>
+                  <tfnd.0002.lodge.req.02.00:Payee>
+                    <pyid.02.00:Identifiers.TaxFileNumber.Identifier contextRef="RP">42656503</pyid.02.00:Identifiers.TaxFileNumber.Identifier>
+                    <pyid.02.00:IdentificationExemptionDetails.TFNExemptionType.Code contextRef="RP" xsi:nil="true"></pyid.02.00:IdentificationExemptionDetails.TFNExemptionType.Code>
+                    <pyde.02.00:PersonDemographicDetails.Birth.Date contextRef="RP">1989-07-05</pyde.02.00:PersonDemographicDetails.Birth.Date>
+                    <lrla.02.00:EmploymentIdentification.PayrollNumber.Identifier contextRef="RP">8542</lrla.02.00:EmploymentIdentification.PayrollNumber.Identifier>
+                    <pylk.02.00:PaymentArrangement.Termination.Code contextRef="RP">T</pylk.02.00:PaymentArrangement.Termination.Code>
+                    <pyde.02.00:Residency.TaxPurposesPersonStatus.Indicator contextRef="RP">true</pyde.02.00:Residency.TaxPurposesPersonStatus.Indicator>
+                    <pylk.02.00:PaymentArrangement.PaymentBasis.Code contextRef="RP">F</pylk.02.00:PaymentArrangement.PaymentBasis.Code>
+                    <gfati.02.00:TaxOffsetClaim.TaxFreeThreshold.Indicator contextRef="RP">true</gfati.02.00:TaxOffsetClaim.TaxFreeThreshold.Indicator>
+                    <gfati.02.00:TaxOffsetClaim.SeniorAustraliansTaxOffset.Indicator contextRef="RP">false</gfati.02.00:TaxOffsetClaim.SeniorAustraliansTaxOffset.Indicator>
+                    <gfati.02.00:TaxOffsetClaim.Zone.Indicator contextRef="RP">false</gfati.02.00:TaxOffsetClaim.Zone.Indicator>
+                    <gfati.02.00:TaxOffsetClaim.OverseasForces.Indicator contextRef="RP">false</gfati.02.00:TaxOffsetClaim.OverseasForces.Indicator>
+                    <gfati.02.00:TaxOffsetClaim.DependantSpouse.Indicator contextRef="RP">true</gfati.02.00:TaxOffsetClaim.DependantSpouse.Indicator>
+                    <gfati.02.00:TaxOffsetClaim.ParentSpouseOrInvalidRelative.Indicator contextRef="RP">false</gfati.02.00:TaxOffsetClaim.ParentSpouseOrInvalidRelative.Indicator>
+                    <edte.02.00:StudentLoan.HigherEducationLoanProgramme.Indicator contextRef="RP">false</edte.02.00:StudentLoan.HigherEducationLoanProgramme.Indicator>
+                    <edte.02.01:StudentLoan.TradeSupport.Indicator contextRef="RP">false</edte.02.01:StudentLoan.TradeSupport.Indicator>
+                    <edte.02.00:StudentLoan.StudentFinancialSupplementScheme.Indicator contextRef="RP">false</edte.02.00:StudentLoan.StudentFinancialSupplementScheme.Indicator>
+                    <prsnstrcnm2.02.00:PersonNameDetails>
+                      <pyde.02.00:PersonNameDetails.PersonNameType.Code contextRef="RP">LGL</pyde.02.00:PersonNameDetails.PersonNameType.Code>
+                      <pyde.02.00:PersonNameDetails.Currency.Code contextRef="RP">C</pyde.02.00:PersonNameDetails.Currency.Code>
+                      <pyde.02.00:PersonNameDetails.FamilyName.Text contextRef="RP">Higgins</pyde.02.00:PersonNameDetails.FamilyName.Text>
+                      <pyde.02.00:PersonNameDetails.GivenName.Text contextRef="RP">Kate</pyde.02.00:PersonNameDetails.GivenName.Text>
+                      <pyde.02.00:PersonNameDetails.OtherGivenName.Text contextRef="RP">Moss</pyde.02.00:PersonNameDetails.OtherGivenName.Text>
+                    </prsnstrcnm2.02.00:PersonNameDetails>
+                    <prsnstrcnm2.02.00:PersonNameDetails>
+                      <pyde.02.00:PersonNameDetails.PersonNameType.Code contextRef="RP">LGL</pyde.02.00:PersonNameDetails.PersonNameType.Code>
+                      <pyde.02.00:PersonNameDetails.Currency.Code contextRef="RP">P</pyde.02.00:PersonNameDetails.Currency.Code>
+                      <pyde.02.00:PersonNameDetails.FamilyName.Text contextRef="RP">Mowsan</pyde.02.00:PersonNameDetails.FamilyName.Text>
+                      <pyde.02.00:PersonNameDetails.GivenName.Text contextRef="RP">Kate</pyde.02.00:PersonNameDetails.GivenName.Text>
+                      <pyde.02.00:PersonNameDetails.OtherGivenName.Text contextRef="RP"></pyde.02.00:PersonNameDetails.OtherGivenName.Text>
+                    </prsnstrcnm2.02.00:PersonNameDetails>
+                    <address1.02.02:AddressDetails>
+                      <pyde.02.00:AddressDetails.OverseasAddress.Indicator contextRef="RP">false</pyde.02.00:AddressDetails.OverseasAddress.Indicator>
+                      <pyde.02.01:AddressDetails.Usage.Code contextRef="RP">RES</pyde.02.01:AddressDetails.Usage.Code>
+                      <pyde.02.00:AddressDetails.AttentionTo.Text contextRef="RP"></pyde.02.00:AddressDetails.AttentionTo.Text>
+                      <pyde.02.00:AddressDetails.Line1.Text contextRef="RP">376 Albert Crescent</pyde.02.00:AddressDetails.Line1.Text>
+                      <pyde.02.00:AddressDetails.Line2.Text contextRef="RP"></pyde.02.00:AddressDetails.Line2.Text>
+                      <pyde.02.00:AddressDetails.Line3.Text contextRef="RP"></pyde.02.00:AddressDetails.Line3.Text>
+                      <pyde.02.00:AddressDetails.Line4.Text contextRef="RP"></pyde.02.00:AddressDetails.Line4.Text>
+                      <pyde.02.00:AddressDetails.LocalityName.Text contextRef="RP">North Sydney</pyde.02.00:AddressDetails.LocalityName.Text>
+                      <pyde.02.00:AddressDetails.Postcode.Text contextRef="RP">2100</pyde.02.00:AddressDetails.Postcode.Text>
+                      <pyde.02.00:AddressDetails.StateOrTerritory.Code contextRef="RP">NSW</pyde.02.00:AddressDetails.StateOrTerritory.Code>
+                      <pyde.02.08:AddressDetails.CountryName.Text contextRef="RP" xsi:nil="true"></pyde.02.08:AddressDetails.CountryName.Text>
+                      <pyde.02.08:AddressDetails.Country.Code contextRef="RP" xsi:nil="true"></pyde.02.08:AddressDetails.Country.Code>
+                    </address1.02.02:AddressDetails>
+                    <declaration1.02.01:Declaration>
+                      <pyin.02.03:Declaration.StatementType.Code contextRef="RP">HardCopy</pyin.02.03:Declaration.StatementType.Code>
+                      <pyin.02.00:Declaration.StatementAccepted.Indicator contextRef="RP">true</pyin.02.00:Declaration.StatementAccepted.Indicator>
+                      <pyin.02.00:Declaration.Signature.Date contextRef="RP">2012-02-15</pyin.02.00:Declaration.Signature.Date>
+                      <pyin.02.00:Declaration.SignatoryIdentifier.Text contextRef="RP">Kate Mowsan</pyin.02.00:Declaration.SignatoryIdentifier.Text>
+                    </declaration1.02.01:Declaration>
+                  </tfnd.0002.lodge.req.02.00:Payee>
+                  <declaration1.02.01:Declaration>
+                    <pyin.02.03:Declaration.StatementType.Code contextRef="RP">TrueAndCorrect</pyin.02.03:Declaration.StatementType.Code>
+                    <pyin.02.00:Declaration.StatementAccepted.Indicator contextRef="RP">true</pyin.02.00:Declaration.StatementAccepted.Indicator>
+                    <pyin.02.00:Declaration.Signature.Date contextRef="RP">2012-02-21</pyin.02.00:Declaration.Signature.Date>
+                    <pyin.02.00:Declaration.SignatoryIdentifier.Text contextRef="RP">Sydney Tax</pyin.02.00:Declaration.SignatoryIdentifier.Text>
+                  </declaration1.02.01:Declaration>
+                </xbrli:xbrl>
