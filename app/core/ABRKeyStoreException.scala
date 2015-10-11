@@ -1,5 +1,5 @@
 
-package au.gov.sbr.core.test;
+package core.keystoreException
 
 case class ABRKeyStoreException() extends Exception
 {

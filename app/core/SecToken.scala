@@ -1,5 +1,5 @@
 
-package au.gov.sbr.core.test
+package core.secToken
 
 import java.security.PrivateKey
 import java.security.cert.Certificate
@@ -48,6 +48,7 @@ class SecToken {
 			vgClient.setEndpoint(stsEndpoint)
 			vgClient.setKeySize("512")
 			vgClient.setTTL("30")
+    play.Logger.info(stsEndpoint)
 		}
 
 		val resources:ResourceBundle  = ResourceBundle.getBundle("SecToken")
@@ -55,6 +56,7 @@ class SecToken {
 		val counter:Int  = 1
 		val claimsCount:Int  = Integer.parseInt(resources.getString("claims.count"))
 		var claimList  = new ListBuffer[String]()
+
 
 		for (counter <- 1 to claimsCount) {
 			claimList += resources.getString("claim" + counter + ".url") 

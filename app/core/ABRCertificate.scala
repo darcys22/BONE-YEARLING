@@ -1,5 +1,5 @@
 
-package au.gov.sbr.core.test
+package core.ABRCertificate
 
 import java.security.cert.Certificate
 import java.security.cert.X509Certificate
@@ -7,7 +7,9 @@ import java.security.PrivateKey
 
 import au.gov.abr.akm.credential.store.ABRCredential
 import au.gov.abr.akm.credential.store.ABRKeyStore
-import au.gov.sbr.core.test.util.Util
+import core.util.Util
+import core.defaultConstants._
+import core.keystoreException._
 
 class ABRCertificate {
 

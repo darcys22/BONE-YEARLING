@@ -1,4 +1,4 @@
-package au.gov.sbr.core.test.util
+package core.util
 
 import java.io.Closeable
 import java.io.File
@@ -57,7 +57,7 @@ class Util {
 			fromChannel = origFile.getChannel()
 			toChannel = copiedFile.getChannel()
 
-			fromChannel.transferTo(0, origFile.available(), toChannel)
+			fromChannel.transferTo(0, origFile.available().toLong, toChannel)
 		}
 		catch 
     {

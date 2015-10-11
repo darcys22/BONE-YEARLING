@@ -1,4 +1,4 @@
-package au.gov.sbr.core.test
+package core.defaultConstants
 
 /**
  * Interface to hold constant values required to retrieve a security token

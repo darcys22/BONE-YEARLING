@@ -25,6 +25,12 @@ import scala.collection.JavaConverters._
 
 import org.w3c.dom.Document
 
+import core.defaultConstants._
+import core.util._
+import core.ABRCertificate._
+import core.keystoreException._
+import core.secToken._
+
 object ATOTFND {
 
 	private val AGENCY: String = "ato.gov.au"
