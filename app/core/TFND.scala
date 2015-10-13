@@ -73,11 +73,11 @@ object ATOTFND {
 		}	
 
 		if(System.getProperty(DefaultConstants.VANGUARD_EP_PROPS) == null) {
-			System.setProperty(DefaultConstants.VANGUARD_EP_PROPS, "config/sts.properties")
+			System.setProperty(DefaultConstants.VANGUARD_EP_PROPS, "conf/sts.properties")
 		}
 
 		if (System.getProperty(DefaultConstants.STM_PROPS) == null) {
-			System.setProperty(DefaultConstants.STM_PROPS, "config/securitytokenmanager.properties")
+			System.setProperty(DefaultConstants.STM_PROPS, "conf/securitytokenmanager.properties")
 		}
 		
 		var factory: SBRCoreServicesRequestFactory = new SBRCoreServicesRequestFactory(

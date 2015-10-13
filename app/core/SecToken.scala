@@ -12,6 +12,9 @@ import au.gov.abr.securitytokenmanager.STSClient
 import au.gov.abr.securitytokenmanager.VANguardSTSClient
 import au.gov.abr.securitytokenmanager.SecurityToken
 import au.gov.abr.securitytokenmanager.exceptions.STMException
+import au.gov.abr.securitytokenmanager.exceptions.STMSenderException;
+
+
 
 //import scala.io.Source.fromURL
 
@@ -66,8 +69,16 @@ class SecToken {
 		val claims:String  = claimList.mkString(";")
 		//for (claim:String <- claimList)
       //claims + claim + ""
-    if (im != null) 
-      im.getSecurityIdentityToken(endpointUrl, claims, privateKey, certificateChain) 
+    if (im != null) {
+      try {
+        im.getSecurityIdentityToken(endpointUrl, claims, privateKey, certificateChain) 
+      } catch {
+        case e: STMSenderException => {
+         play.Logger.info(e.getDetailsAsXml())         
+         null
+        }
+      }
+    }
     else 
       null
 	}
